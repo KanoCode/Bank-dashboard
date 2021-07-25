@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/dashboard_styles.css" />
+  </head>
+
+  <body>
+    <nav style="z-index: 1">
+      <div class="right-icon">
+        <img
+          src="./favpng_standard-bank-finance-financial-services-funding.png"
+          alt=""
+        />Stanbic Bank
+      </div>
+      <div class="left-icons">
+        <i class="far fa-user"></i><span></span>
+        <i class="far fa-bell"></i> Henry Jr
+      </div>
+    </nav>
+    <div class="nav-line"></div>
+    <div class="nav2">
+      <div class="greeting">Hello, Henry</div>
+      <div class="nav-links">
+        <a href="#">Dashboard</a><a href="#">Regulatory Payments</a
+        ><a href="#">Cards</a><a href="#">Support</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="first-column">
+        <div class="hero-container">
+          <img class="hero-img" src="./Kano_transparent_bckgnd.png" alt="" />
+          <div class="welcome-text">
+            Welcome to Stanbic Smart pay
+            <span>Easy to make online payments</span>
+          </div>
+          <div class="over-hero-image-deco"></div>
+          <img
+            class="logo-img"
+            src="./favpng_standard-bank-finance-financial-services-funding.png"
+            alt="logo image"
+          />
+        </div>
+        <div class="details">
+          <div class="transaction-history">
+            Transaction History
+            <div class="days">
+              <span class="month">Month</span><span class="week">Week</span
+              ><span class="today active">Today</span>
+            </div>
+          </div>
+          <div class="table">
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>5th Sept, 2019</td>
+                <td>Electricity Bills</td>
+                <td>ZMK 1,000.00</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>5th Sept, 2019</td>
+                <td>Electricity Bills</td>
+                <td>ZMK 1,000.00</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>5th Sept, 2019</td>
+                <td>Electricity Bills</td>
+                <td>ZMK 1,000.00</td>
+                <td>Pending</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="second-column">
+        <div class="main-balance">
+          <div class="info-container">
+            <div class="deco-box">decoration</div>
+            <div class="first-box">
+              Main Balance<span class="amount">K824,571.93</span>
+            </div>
+            <div class="second-box">
+              <div class="third-box">THUR <span class="date">08/21</span></div>
+              <div class="fourth-box">
+                CARD HOLDER <span> William Fancyson</span>
+              </div>
+            </div>
+          </div>
+          <div class="options vertical-text">
+            <i class="fas fa-credit-card"></i>Add/change
+            <i class="fas fa-sort-down"></i>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stats-box">
+            Total Transactions
+            <span class="transaction-totals">
+              <span>K98</span><i class="fas fa-sync-alt"></i
+            ></span>
+          </div>
+          <div class="stats-box">
+            Invoice Remaining
+            <span class="invoice-remaining">
+              <span class="bar"></span
+              ><span class="data" data-target="456">856</span>
+            </span>
+          </div>
+          <div class="stats-box">
+            Current Users
+            <span class="current-users"
+              ><span data-target="456">456</span> <i class="fas fa-users"></i
+            ></span>
+          </div>
+          <div class="stats-box">
+            Active Modules
+            <span class="active-modules">
+              <span data-target="1,467">1,467</span>
+              <i class="fas fa-th"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>Coded by @kanozCode &copy;2021</footer>
+</html>

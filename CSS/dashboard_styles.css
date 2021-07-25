@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --section-color: #0c2f9e;
+  --line-color: #00b5f1;
+  --body-background-color: #f5f7fa;
+}
+body {
+  overflow-y: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: var(--section-color);
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  left: -1px;
+  top: 0;
+}
+.nav-line {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  height: 3px;
+  left: -1px;
+  background-color: var(--line-color, black);
+}
+
+.nav2 {
+  position: fixed;
+  top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  left: -1px;
+  color: gray;
+}
+.greeting {
+  margin-left: 0;
+  margin-right: 30%;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: x-large;
+  margin-left: 10px;
+  height: 45px;
+  width: 18%;
+}
+.left-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: x-large;
+  height: 45px;
+  width: 20%;
+}
+
+nav i {
+  color: whitesmoke;
+}
+
+nav span {
+  background: white;
+  margin-right: 1%;
+  width: 2px;
+  height: 44px;
+}
+nav img {
+  margin-left: 4px;
+  width: 25%;
+  height: auto;
+}
+.hero {
+  border-top: solid 2px gray;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  position: relative;
+  top: 80px;
+  left: 0;
+  width: 98vw;
+  height: 100vh;
+  grid-column-gap: 3px;
+  background: var(--body-background-color);
+
+  border-radius: 6px;
+}
+.main-balance {
+  display: flex;
+  margin-top: 10px;
+  font-size: 12px;
+  color: white;
+  width: 255px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: var(--section-color);
+}
+
+.hero-container {
+  position: relative;
+  margin-top: 10px;
+  background-color: var(--section-color);
+  width: 97%;
+  left: 4px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+.logo-img {
+  width: auto;
+  height: 40%;
+  margin-left: 45%;
+}
+
+.over-hero-image-deco {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  display: flex;
+  font-size: medium;
+  background: white;
+  width: 50%;
+  height: 4px;
+}
+.hero-img {
+  z-index: 1;
+  width: 20%;
+  margin-left: 30%x;
+  height: auto;
+}
+.welcome-text {
+  position: absolute;
+  font-size: 23px;
+  width: 300px;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: gray;
+}
+
+.over-hero-image-deco::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  transform: skewY(23deg);
+  height: 140px;
+  background: white;
+}
+.welcome-text span {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+.info-container {
+  margin: 10px 10px 10px 10px;
+  width: 200px;
+  height: auto;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: var(--body-background-color);
+  height: 83%;
+  color: black;
+  font-weight: 500;
+}
+.options .fa-sort-down:hover {
+  color: #00b5f1;
+}
+
+.deco-box {
+  /* this is a decoration box i will just attempt to make it using pseudo classes */
+  width: 50px;
+  font-style: italic;
+  font-weight: 500;
+  height: 40px;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+.first-box {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 50px;
+  margin: 10% 0 0 1px;
+  text-align: start;
+  padding-left: 8px;
+}
+.amount {
+  position: absolute;
+  top: 23px;
+  left: 9px;
+  width: 89%;
+  height: 45%;
+}
+.second-box {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 2% 0 0 1px;
+}
+
+.third-box {
+  width: 35%;
+  height: 50px;
+  padding: 10px;
+}
+.fourth-box {
+  width: 70%;
+  height: 50px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 4px;
+  top: 31%;
+  width: 68%;
+  bottom: 34%;
+  left: 4px;
+  height: 45.6%;
+  background: white;
+  border-radius: 6px;
+  box-shadow: gray 1px 1px 5px;
+}
+.table {
+  width: 100%;
+  position: absolute;
+  top: 16%;
+}
+th {
+  text-transform: uppercase;
+  text-align: left;
+}
+td,
+th {
+  padding: 11px;
+}
+
+table {
+  width: 97%;
+  margin: 3px 0 11px 10px;
+}
+.table tr:nth-of-type(odd) {
+  background: #f2f4fa;
+}
+
+.transaction-history {
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  position: relative;
+  height: 40px;
+  justify-content: space-between;
+}
+.days {
+  width: 30%;
+  position: absolute;
+  top: 5px;
+  left: 70%;
+  height: 30px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.days span {
+  cursor: pointer;
+  border-bottom: gray solid 2px;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+.days .active {
+  border-bottom: solid springgreen;
+}
+
+.stats {
+  margin-top: 8px;
+  display: flex;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  color: black;
+  width: 97%;
+  height: 32%;
+  border-radius: 6px;
+  background-color: var(--body-background-color);
+}
+
+.stats-box {
+  display: grid;
+  height: 73px;
+  width: 100px;
+  margin: 1%;
+  grid-template-rows: 50% 50%;
+  box-shadow: 1.5px 1.3px 7px gray;
+  background: white;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+}
+.stats-box:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+}
+.invoice-remaining {
+  display: flex;
+  position: relative;
+}
+.data {
+  position: absolute;
+  left: 69px;
+}
+.bar {
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 2.5px;
+  border-radius: 4px;
+  background: #00b5f1;
+}
+.active-modules {
+  display: flex;
+  justify-content: space-around;
+}
+.transaction-totals {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+}
+.current-users {
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+}
