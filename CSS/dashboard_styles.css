@@ -21,6 +21,9 @@ nav {
   left: -1px;
   top: 0;
 }
+nav .fas {
+  visibility: hidden;
+}
 .nav-line {
   position: fixed;
   top: 10%;
@@ -83,7 +86,7 @@ nav img {
   width: 25%;
   height: auto;
 }
-.hero {
+section {
   border-top: solid 2px gray;
   display: grid;
   grid-template-columns: 70% 30%;
@@ -153,6 +156,9 @@ a {
   text-decoration: none;
   margin: 10px;
   color: gray;
+}
+a:hover {
+  color: #00b5f1;
 }
 
 .over-hero-image-deco::before {
@@ -365,4 +371,268 @@ table {
   display: flex;
   justify-content: space-between;
   padding: 10%;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  section {
+    position: fixed;
+    top: 45px;
+    margin: 8px 3px auto 4px;
+  }
+
+  .right-icon {
+    width: 35%;
+  }
+  .left-icons {
+    width: 50%;
+    margin-right: 2%;
+  }
+  .left-icons span {
+    visibility: hidden;
+  }
+
+  .far {
+    visibility: hidden;
+  }
+  .fas {
+    visibility: visible;
+  }
+
+  .hero-container {
+    position: absolute;
+    width: 85%;
+    left: 18px;
+    font-weight: 100;
+    height: 10%;
+    top: 2%;
+    margin: 1% 2% 1% 2%;
+  }
+  .hero-container img {
+    display: none;
+  }
+  .over-hero-image-deco {
+    position: absolute;
+    top: 41%;
+    left: 7%;
+    display: flex;
+    font-size: medium;
+    background: white;
+    width: 50%;
+    height: 4px;
+  }
+  .over-hero-image-deco::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    transform: skewY(23deg);
+    height: 24px;
+    background: white;
+  }
+  .second-row {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-balance {
+    position: absolute;
+    height: 45%;
+    margin: 2px 4px 2% 2%;
+    opacity: 0.9;
+    padding: 2%;
+  }
+
+  .stats {
+    position: relative;
+    left: 55%;
+    display: flex;
+    width: 45%;
+    height: 175px;
+    padding: 1%;
+  }
+  .nav-line {
+    position: fixed;
+    top: 8%;
+    width: 100%;
+    height: 3px;
+    left: -1px;
+  }
+  .details {
+    margin-top: 25%;
+    margin-left: 1%;
+    width: 95%;
+    z-index: 1;
+    top: 22%;
+    overflow-y: hidden;
+  }
+  .details:hover {
+    overflow-y: scroll;
+  }
+  nav {
+    height: 8%;
+  }
+  nav .fas {
+    visibility: visible;
+  }
+
+  .nav2 {
+    display: none;
+  }
+}
+@media (max-width: 703px) {
+  .second-row {
+    top: 5px;
+  }
+  .details {
+    top: 10%;
+    overflow: hidden;
+  }
+  .hero-container {
+    position: absolute;
+    width: 95%;
+    left: 18px;
+    z-index: 100;
+    font-weight: 100;
+    height: 8%;
+    top: 450px;
+    left: 2px;
+  }
+  .welcome-text {
+    font-size: 20px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .over-hero-image-deco {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    display: flex;
+    font-size: medium;
+    background: white;
+    width: 40%;
+    height: 2px;
+  }
+  .over-hero-image-deco::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    transform: skewY(23deg);
+    height: 14px;
+    background: white;
+  }
+  .hero-container img {
+    display: none;
+  }
+}
+@media (max-width: 617px) {
+  .hero-container {
+    display: none;
+  }
+  .details {
+    top: 13%;
+  }
+  .stats {
+    width: 25%;
+    left: 72%;
+  }
+  .stats div:nth-of-type(odd) {
+    display: none;
+  }
+  .right-icon {
+    width: 45%;
+  }
+  .main-balance {
+    width: 60%;
+  }
+}
+@media (max-width: 562px) {
+  body {
+    overflow-y: hidden;
+  }
+  .main-balance {
+    width: 80%;
+    left: 10%;
+  }
+  .stats {
+    width: 80%;
+    height: 30%;
+    top: 46%;
+
+    display: inline-flex;
+    justify-content: space-between;
+    left: 10%;
+  }
+  .stats div:nth-of-type(odd) {
+    display: block;
+  }
+
+  .one {
+    position: fixed;
+    opacity: 0;
+    display: none;
+    background-color: lightsalmon;
+  }
+  .details {
+    top: 38%;
+  }
+  .days .month {
+    display: none;
+  }
+}
+
+@media (max-width: 522px) {
+  .stats {
+    width: 80%;
+    height: 30%;
+    top: 46%;
+
+    display: inline-flex;
+    justify-content: space-between;
+    left: 10%;
+  }
+  .stats div:nth-of-type(odd) {
+    display: none;
+  }
+  .right-icon {
+    width: 70%;
+  }
+  .fas {
+    font-size: large;
+  }
+  .left-icons {
+    font-size: 0;
+  }
+  .details {
+    top: 40%;
+    width: 90%;
+    left: 6%;
+  }
+}
+
+@media (max-width: 400px) {
+  .details:hover {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 341px) {
+  .details {
+    top: 42%;
+    height: 34%;
+  }
+  .days .week {
+    display: none;
+  }
+  .right-icon {
+    width: 100%;
+  }
+  table {
+  }
 }

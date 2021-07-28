@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <nav style="z-index: 1">
+    <nav class="active">
       <div class="right-icon">
         <img
           src="./favpng_standard-bank-finance-financial-services-funding.png"
@@ -27,6 +27,7 @@
       <div class="left-icons">
         <i class="far fa-user"></i><span></span>
         <i class="far fa-bell"></i> Henry Jr
+        <i class="fas fa-bars" onclick="toggleNavClass()"></i>
       </div>
     </nav>
     <div class="nav-line"></div>
@@ -38,8 +39,8 @@
       </div>
     </div>
 
-    <section class="hero">
-      <div class="first-column">
+    <section>
+      <div class="first-row">
         <div class="hero-container">
           <img class="hero-img" src="./Kano_transparent_bckgnd.png" alt="" />
           <div class="welcome-text">
@@ -83,6 +84,12 @@
               </tr>
               <tr>
                 <td>5th Sept, 2019</td>
+                <td>New Row Bills</td>
+                <td>ZMK 1,000.00</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>5th Sept, 2019</td>
                 <td>Electricity Bills</td>
                 <td>ZMK 1,000.00</td>
                 <td>Pending</td>
@@ -91,7 +98,8 @@
           </div>
         </div>
       </div>
-      <div class="second-column">
+      <div class="second-row">
+        <!--The row will only work when i apply a breakpoint-->
         <div class="main-balance">
           <div class="info-container">
             <div class="deco-box">decoration</div>
@@ -124,7 +132,7 @@
               ><span class="data" data-target="456">856</span>
             </span>
           </div>
-          <div class="stats-box">
+          <div class="stats-box one">
             Current Users
             <span class="current-users"
               ><span data-target="456">456</span> <i class="fas fa-users"></i
