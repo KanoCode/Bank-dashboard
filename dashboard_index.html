@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <nav class="active">
+    <nav class="">
       <div class="right-icon">
         <img
           src="./favpng_standard-bank-finance-financial-services-funding.png"
@@ -25,9 +25,11 @@
         />Stanbic Bank
       </div>
       <div class="left-icons">
+        Henry Jr
         <i class="far fa-user"></i><span></span>
-        <i class="far fa-bell"></i> Henry Jr
-        <i class="fas fa-bars" onclick="toggleNavClass()"></i>
+        <i class="far fa-bell">notifications</i>
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
       </div>
     </nav>
     <div class="nav-line"></div>
@@ -39,7 +41,7 @@
       </div>
     </div>
 
-    <section>
+    <section class="active">
       <div class="first-row">
         <div class="hero-container">
           <img class="hero-img" src="./Kano_transparent_bckgnd.png" alt="" />
@@ -122,32 +124,35 @@
           <div class="stats-box">
             Total Transactions
             <span class="transaction-totals">
-              <span>K98</span><i class="fas fa-sync-alt"></i
+              <span class="counter" data-target="1030">0</span
+              ><i class="fas fa-sync-alt"></i
             ></span>
           </div>
           <div class="stats-box">
             Invoice Remaining
             <span class="invoice-remaining">
               <span class="bar"></span
-              ><span class="data" data-target="456">856</span>
+              ><span class="counter" data-target="457">0</span>
             </span>
           </div>
           <div class="stats-box one">
             Current Users
             <span class="current-users"
-              ><span data-target="456">456</span> <i class="fas fa-users"></i
+              ><span class="counter" data-target="456">0</span>
+              <i class="fas fa-users"></i
             ></span>
           </div>
           <div class="stats-box">
             Active Modules
             <span class="active-modules">
-              <span data-target="1,467">1,467</span>
+              <span class="counter" data-target="1467">0</span>
               <i class="fas fa-th"></i>
             </span>
           </div>
         </div>
       </div>
     </section>
+    <script src="./dashboard_index.js"></script>
+    <footer>Coded by @kanozCode &copy;2021</footer>
   </body>
-  <footer>Coded by @kanozCode &copy;2021</footer>
 </html>

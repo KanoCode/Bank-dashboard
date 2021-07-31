@@ -22,8 +22,10 @@ nav {
   top: 0;
 }
 nav .fas {
-  visibility: hidden;
+  position: fixed;
+  transform: translateX(-1000px);
 }
+
 .nav-line {
   position: fixed;
   top: 10%;
@@ -342,15 +344,13 @@ table {
 }
 .invoice-remaining {
   display: flex;
+  align-items: center;
   position: relative;
 }
-.data {
-  position: absolute;
-  left: 69px;
-}
+
 .bar {
-  top: 4px;
-  left: 4px;
+  top: 4%px;
+  left: 54px;
   position: absolute;
   display: block;
   width: 35px;
@@ -377,10 +377,44 @@ table {
   body {
     margin: 0;
   }
+  .fa-times {
+    transform: translateX(0%);
+    top: 10px;
+    left: 96%;
+  }
+
+  .active .left-icons {
+    position: fixed;
+    border: greenyellow solid 4px;
+    left: 54%;
+    top: 3px;
+    padding-top: 60px;
+    width: 50%;
+    transition: height ease-in-out 3s;
+    height: 300px;
+    display: flex;
+    background-color: springgreen;
+    flex-direction: column;
+    opacity: 1;
+  }
+  .far {
+    position: fixed;
+    transform: translateX(1000%);
+  }
+  .active .fa-times {
+    transform: translateX(0);
+    top: 10px;
+    left: 96%;
+  }
+
+  .active .left-icons .far {
+    opacity: 1;
+  }
   section {
     position: fixed;
     top: 45px;
     margin: 8px 3px auto 4px;
+    z-index: -2;
   }
 
   .right-icon {
@@ -388,17 +422,10 @@ table {
   }
   .left-icons {
     width: 50%;
-    margin-right: 2%;
+    margin-left: 2%;
   }
   .left-icons span {
-    visibility: hidden;
-  }
-
-  .far {
-    visibility: hidden;
-  }
-  .fas {
-    visibility: visible;
+    opacity: 0;
   }
 
   .hero-container {
@@ -458,6 +485,7 @@ table {
   .nav-line {
     position: fixed;
     top: 8%;
+    z-index: -1;
     width: 100%;
     height: 3px;
     left: -1px;
@@ -475,9 +503,6 @@ table {
   }
   nav {
     height: 8%;
-  }
-  nav .fas {
-    visibility: visible;
   }
 
   .nav2 {
@@ -531,7 +556,7 @@ table {
     display: none;
   }
 }
-@media (max-width: 617px) {
+@media (max-width: 630px) {
   .hero-container {
     display: none;
   }
@@ -632,7 +657,5 @@ table {
   }
   .right-icon {
     width: 100%;
-  }
-  table {
   }
 }
