@@ -93,7 +93,7 @@ section {
   display: grid;
   grid-template-columns: 70% 30%;
   position: relative;
-  top: 80px;
+  top: 100px;
   left: 0;
   width: 98vw;
   height: 100vh;
